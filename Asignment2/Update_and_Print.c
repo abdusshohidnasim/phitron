@@ -55,7 +55,7 @@ int main()
     }
     scanf("%d %d", &changeindex, &updatevalu);
     arry[changeindex] = updatevalu;
-    arrylent -=1; 
+    arrylent -= 1;
     for (; arrylent >= 0; arrylent--)
     {
         printf("%d ", arry[arrylent]);
