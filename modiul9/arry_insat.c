@@ -10,20 +10,21 @@ int main()
 
     /// input
 
-    // for (int i = 0; i <= input; i++)
-    // {
-    //     scanf("%d", &arry[i]);
-    // }
+    for (int i = 0; i < input; i++)
+    {
+        scanf("%d", &arry[i]);
+    }
 
     int index, number;
 
-    scanf("%d %d",&index, &number);
+    scanf("%d %d", &index, &number);
 
     printf("%d %d naiem \n", index, number);
+    printf("%d ", number);
 
     // printf
 
-    printf("%d ", arry[1]);
+    printf("%d ", arry[5]);
 
     // for (int i = 0; i < input; i++)
     // {
