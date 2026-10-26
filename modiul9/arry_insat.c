@@ -4,7 +4,7 @@ int main()
     int input;
     scanf("%d", &input);
 
-    int arry[input + 1];
+    int a[input+1];
 
     printf("%d \n", input);
 
@@ -12,36 +12,31 @@ int main()
 
     for (int i = 0; i < input; i++)
     {
-        scanf("%d", &arry[i]);
+        scanf("%d", &a[i]);
     }
 
+    for (int i = 0; i < input; i++)
+    {
+        printf("%d ,",a[i]); 
+    }
+    
     int index, number;
 
     scanf("%d %d", &index, &number);
 
-    printf("%d %d naiem \n", index, number);
-    printf("%d ", number);
 
-    // printf
+    printf("\n");
 
-    printf("%d ", arry[5]);
+    for (int i = input+1; i >= index; i--)
+    {
+        a[i+1] = a[i];
+    }
 
-    // for (int i = 0; i < input; i++)
-    // {
-    //     printf("%d ,", arry[i]);
-    // }
-    // printf("\n");
-
-    // for (int i = index; i <= input; i++)
-    // {
-    //     arry[i + 1] = arry[i];
-    // }
-
-    // arry[index] = number;
-    // for (int i = 1; i < input; i++)
-    // {
-    //     printf("%d ,", arry[i]);
-    // }
+    a[index] = number;
+    for (int i = 0; i <=input; i++)
+    {
+        printf("%d ,", a[i]);
+    }
 
     return 0;
 }
