@@ -22,6 +22,7 @@ OutputCopy
 5 - 10 = -5
 
 */
+
 #include <stdio.h>
 int main()
 {
